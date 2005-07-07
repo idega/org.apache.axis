@@ -70,10 +70,9 @@ Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 
  <!-- Commented out because this is defined in the webapp
     <session-config>
-        <!-- Default to 5 minute session timeouts -->
-        <session-timeout>5</session-timeout>
+         <session-timeout>5</session-timeout>
     </session-config>
-     -->
+ -->
 
     <!-- currently the W3C havent settled on a media type for WSDL;
     http://www.w3.org/TR/2003/WD-wsdl12-20030303/#ietf-draft
