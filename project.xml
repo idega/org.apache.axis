@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <pomVersion>3</pomVersion>
+  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <name>Axis</name>
+  <groupId>bundles</groupId>
+  <artifactId>org.apache.axis</artifactId>
+  <currentVersion>1.2.1</currentVersion>
+  <organization/>
+  <inceptionYear>2005</inceptionYear>
+  <shortDescription>Apache Axis framework</shortDescription>
+  <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
+  <issueTrackingUrl>http://issues.apache.org/jira/browse/AXIS</issueTrackingUrl>
+  <versions/>
+  <branches/>
+  <developers>
+    <developer>
+      <name>Eirikur S. Hrafnsson</name>
+      <id>eiki</id>
+      <email>eiki@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis</artifactId>
+      <version>1.2.1</version>
+      <type>jar</type>
+      <url>http://ws.apache.org/axis</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis-ant</artifactId>
+      <version>1.2.1</version>
+      <type>jar</type>
+      <url>http://ws.apache.org/axis/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>axis-samples</groupId>
+      <artifactId>axis-samples</artifactId>
+      <version>1.2.1</version>
+      <type>jar</type>
+      <url>http://ws.apache.org/axis</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-discovery</groupId>
+      <artifactId>commons-discovery</artifactId>
+      <version>0.2</version>
+      <type>jar</type>
+      <url>http://jakarta.apache.org/commons/discovery/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>jaxrpc</groupId>
+      <artifactId>jaxrpc</artifactId>
+      <version>1.1</version>
+      <type>jar</type>
+      <url>http://jax-rpc.dev.java.net/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>wsdl4j</groupId>
+      <artifactId>wsdl4j</artifactId>
+      <version>1.5.1</version>
+      <type>jar</type>
+      <url>http://sourceforge.net/projects/wsdl4j/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>saaj</groupId>
+      <artifactId>saaj</artifactId>
+      <version>1.2</version>
+      <type>jar</type>
+      <url>http://saaj.dev.java.net/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.8</version>
+      <type>jar</type>
+      <url>http://logging.apache.org/log4j/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    
+    
+    <!-- already included in core -->
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.4</version>
+      <type>jar</type>
+      <url>http://jakarta.apache.org/commons/logging/</url>
+    </dependency>
+    
+    <!-- already included in core -->
+
+    </dependencies>
+</project>
