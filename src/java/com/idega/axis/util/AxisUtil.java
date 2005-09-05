@@ -1,5 +1,5 @@
 /*
- * $Id: AxisUtil.java,v 1.1 2005/08/10 15:02:51 eiki Exp $ Created on Aug 9, 2005
+ * $Id: AxisUtil.java,v 1.2 2005/09/05 17:13:18 eiki Exp $ Created on Aug 9, 2005
  * 
  * Copyright (C) 2005 Idega Software hf. All Rights Reserved.
  * 
@@ -15,6 +15,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.apache.axis.MessageContext;
 import org.apache.axis.transport.http.HTTPConstants;
+import com.idega.business.IBOLookup;
+import com.idega.business.IBOLookupException;
+import com.idega.business.IBOService;
+import com.idega.business.IBOSession;
 import com.idega.idegaweb.IWApplicationContext;
 import com.idega.idegaweb.IWMainApplication;
 import com.idega.idegaweb.IWUserContext;
@@ -23,10 +27,10 @@ import com.idega.idegaweb.IWUserContextImpl;
 /**
  * A helper class for axis webservices in IdegaWeb applications.
  * 
- * Last modified: $Date: 2005/08/10 15:02:51 $ by $Author: eiki $
+ * Last modified: $Date: 2005/09/05 17:13:18 $ by $Author: eiki $
  * 
  * @author <a href="mailto:eiki@idega.com">eiki</a>
- * @version $Revision: 1.1 $
+ * @version $Revision: 1.2 $
  */
 public class AxisUtil {
 
@@ -86,4 +90,13 @@ public class AxisUtil {
 		}
 		return null;
 	}
+	
+	public static IBOService getServiceBean(Class serviceBeanInterface) throws IBOLookupException{
+		return IBOLookup.getServiceInstance(getIWApplicationContext(),serviceBeanInterface);
+	}
+	
+	public static IBOSession getSessionBean(Class sessionBeanInterface) throws IBOLookupException{
+		return IBOLookup.getSessionInstance(getIWUserContext(),sessionBeanInterface);
+	}
+	
 }
