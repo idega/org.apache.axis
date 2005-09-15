@@ -110,18 +110,19 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
+    
+    <!-- log4j already included in core -->
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.8</version>
       <type>jar</type>
       <url>http://logging.apache.org/log4j/</url>
-      <properties>
-        <idegaweb.bundle.include>true</idegaweb.bundle.include>
-      </properties>
-    </dependency>
-    <!-- already included in core -->
 
+
+    </dependency>
+    
+    <!-- commons logging already included in core -->
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
