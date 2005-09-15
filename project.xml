@@ -27,8 +27,8 @@
   <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.core</artifactId>
-      <!--version>3.0.6</version-->
-      <version>SNAPSHOT</version>
+      <!--HELPER--><version>3.0.6</version><!--HELPER-->
+      <!--HELPERversion>SNAPSHOT</versionHELPER-->
       <type>jar</type>
       <url>http://www.idega.com/</url>
     </dependency>
