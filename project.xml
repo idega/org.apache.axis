@@ -6,8 +6,8 @@
   <name>Axis</name>
   <groupId>bundles</groupId>
   <artifactId>org.apache.axis</artifactId>
-  <!--currentVersion>1.2.2</currentVersion-->
-  <currentVersion>1.2.3-SNAPSHOT</currentVersion>
+  <currentVersion>1.2.2</currentVersion>
+  <!--currentVersion>1.2.3-SNAPSHOT</currentVersion-->
   <organization/>
   <inceptionYear>2005</inceptionYear>
   <shortDescription>Apache Axis framework</shortDescription>
@@ -34,8 +34,8 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.core</artifactId>
-      <!--version>3.0.6</version-->
-      <version>SNAPSHOT</version>
+      <!--HELPER--><version>3.0.6</version><!--HELPER-->
+      <!--HELPERversion>SNAPSHOT</versionHELPER-->
 
       <type>jar</type>
       <url>http://www.idega.com/</url>
