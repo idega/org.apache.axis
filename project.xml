@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project>
   <pomVersion>3</pomVersion>
   <extend>${base.project.dir}/base-dependencies.xml</extend>
@@ -11,7 +12,13 @@
   <shortDescription>Apache Axis framework</shortDescription>
   <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
   <issueTrackingUrl>http://issues.apache.org/jira/browse/AXIS</issueTrackingUrl>
-  <versions/>
+  <versions>
+    <version>
+      <id>1.2.2</id>
+      <name>1.2.2</name>
+      <tag>ORG_APACHE_AXIS_1_2_2</tag>
+    </version>
+  </versions>
   <branches/>
   <developers>
     <developer>
@@ -23,16 +30,18 @@
     </developer>
   </developers>
   <dependencies>
-  
-  <dependency>
+    <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.core</artifactId>
-      <!--HELPER--><version>3.0.6</version><!--HELPER-->
+      <!--HELPER-->
+
+      <version>3.0.6</version>
+      <!--HELPER-->
       <!--HELPERversion>SNAPSHOT</versionHELPER-->
+
       <type>jar</type>
       <url>http://www.idega.com/</url>
     </dependency>
-    
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis</artifactId>
@@ -43,7 +52,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis-ant</artifactId>
@@ -54,7 +62,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>axis-samples</groupId>
       <artifactId>axis-samples</artifactId>
@@ -65,7 +72,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-
     <dependency>
       <groupId>commons-discovery</groupId>
       <artifactId>commons-discovery</artifactId>
@@ -76,7 +82,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>jaxrpc</groupId>
       <artifactId>jaxrpc</artifactId>
@@ -87,7 +92,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>wsdl4j</groupId>
       <artifactId>wsdl4j</artifactId>
@@ -98,7 +102,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>saaj</groupId>
       <artifactId>saaj</artifactId>
@@ -109,7 +112,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
@@ -120,8 +122,6 @@
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
     </dependency>
-    
-    
     <!-- already included in core -->
 
     <dependency>
@@ -131,8 +131,7 @@
       <type>jar</type>
       <url>http://jakarta.apache.org/commons/logging/</url>
     </dependency>
-    
     <!-- already included in core -->
 
-    </dependencies>
+  </dependencies>
 </project>
