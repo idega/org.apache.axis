@@ -5,7 +5,7 @@
   </classpathentry>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
   </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.core-SNAPSHOT.jar">
+  <classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.core-3.0.6.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-1.2.1.jar">
   </classpathentry>
