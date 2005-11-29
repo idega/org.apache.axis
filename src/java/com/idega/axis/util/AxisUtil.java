@@ -1,5 +1,5 @@
 /*
- * $Id: AxisUtil.java,v 1.2 2005/09/05 17:13:18 eiki Exp $ Created on Aug 9, 2005
+ * $Id: AxisUtil.java,v 1.3 2005/11/29 15:29:01 laddi Exp $ Created on Aug 9, 2005
  * 
  * Copyright (C) 2005 Idega Software hf. All Rights Reserved.
  * 
@@ -27,10 +27,10 @@ import com.idega.idegaweb.IWUserContextImpl;
 /**
  * A helper class for axis webservices in IdegaWeb applications.
  * 
- * Last modified: $Date: 2005/09/05 17:13:18 $ by $Author: eiki $
+ * Last modified: $Date: 2005/11/29 15:29:01 $ by $Author: laddi $
  * 
  * @author <a href="mailto:eiki@idega.com">eiki</a>
- * @version $Revision: 1.2 $
+ * @version $Revision: 1.3 $
  */
 public class AxisUtil {
 
@@ -78,7 +78,7 @@ public class AxisUtil {
 		MessageContext axisContext = MessageContext.getCurrentContext();
 		if (axisContext != null) {
 			HttpServlet servlet = (HttpServlet) axisContext.getProperty(HTTPConstants.MC_HTTP_SERVLET);
-			return (ServletContext) servlet.getServletContext();
+			return servlet.getServletContext();
 		}
 		return null;
 	}
