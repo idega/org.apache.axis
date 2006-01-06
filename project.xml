@@ -46,7 +46,17 @@
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis</artifactId>
-      <version>1.2.1</version>
+      <version>1.3</version>
+      <type>jar</type>
+      <url>http://ws.apache.org/axis</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis-schema</artifactId>
+      <version>1.3</version>
       <type>jar</type>
       <url>http://ws.apache.org/axis</url>
       <properties>
@@ -56,19 +66,9 @@
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis-ant</artifactId>
-      <version>1.2.1</version>
+      <version>1.3</version>
       <type>jar</type>
       <url>http://ws.apache.org/axis/</url>
-      <properties>
-        <idegaweb.bundle.include>true</idegaweb.bundle.include>
-      </properties>
-    </dependency>
-    <dependency>
-      <groupId>axis-samples</groupId>
-      <artifactId>axis-samples</artifactId>
-      <version>1.2.1</version>
-      <type>jar</type>
-      <url>http://ws.apache.org/axis</url>
       <properties>
         <idegaweb.bundle.include>true</idegaweb.bundle.include>
       </properties>
@@ -84,9 +84,9 @@
       </properties>
     </dependency>
     <dependency>
-      <groupId>jaxrpc</groupId>
-      <artifactId>jaxrpc</artifactId>
-      <version>1.1</version>
+      <groupId>axis</groupId>
+      <artifactId>axis-jaxrpc</artifactId>
+      <version>1.3</version>
       <type>jar</type>
       <url>http://jax-rpc.dev.java.net/</url>
       <properties>
@@ -94,8 +94,8 @@
       </properties>
     </dependency>
     <dependency>
-      <groupId>wsdl4j</groupId>
-      <artifactId>wsdl4j</artifactId>
+      <groupId>axis</groupId>
+      <artifactId>axis-wsdl4j</artifactId>
       <version>1.5.1</version>
       <type>jar</type>
       <url>http://sourceforge.net/projects/wsdl4j/</url>
@@ -104,9 +104,9 @@
       </properties>
     </dependency>
     <dependency>
-      <groupId>saaj</groupId>
-      <artifactId>saaj</artifactId>
-      <version>1.2</version>
+      <groupId>axis</groupId>
+      <artifactId>axis-saaj</artifactId>
+      <version>1.3</version>
       <type>jar</type>
       <url>http://saaj.dev.java.net/</url>
       <properties>
