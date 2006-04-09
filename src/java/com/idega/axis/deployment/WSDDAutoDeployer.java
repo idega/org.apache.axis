@@ -1,5 +1,5 @@
 /*
- * $Id: WSDDAutoDeployer.java,v 1.1 2006/02/06 12:27:56 tryggvil Exp $
+ * $Id: WSDDAutoDeployer.java,v 1.2 2006/04/09 11:58:12 laddi Exp $
  * Created on 5.2.2006 in project org.apache.axis
  *
  * Copyright (C) 2006 Idega Software hf. All Rights Reserved.
@@ -40,10 +40,10 @@ import com.idega.idegaweb.JarLoader;
  * Implementation of JarLoader to automatically load an Axis .wsdd deployment descriptor
  * and deploy in an idegaWeb application.
  * </p>
- *  Last modified: $Date: 2006/02/06 12:27:56 $ by $Author: tryggvil $
+ *  Last modified: $Date: 2006/04/09 11:58:12 $ by $Author: laddi $
  * 
  * @author <a href="mailto:tryggvil@idega.com">tryggvil</a>
- * @version $Revision: 1.1 $
+ * @version $Revision: 1.2 $
  */
 public class WSDDAutoDeployer implements JarLoader{
 
@@ -144,8 +144,9 @@ public class WSDDAutoDeployer implements JarLoader{
     if(action.equals("quit"))
     {
         log.severe(Messages.getMessage("quitRequest00"));
-        if(msgContext != null)
-            msgContext.setProperty("quit.requested", "true");
+        if(msgContext != null) {
+					msgContext.setProperty("quit.requested", "true");
+				}
         doc = XMLUtils.newDocument();
         doc.appendChild(root = doc.createElementNS("", "Admin"));
         root.appendChild(doc.createTextNode(Messages.getMessage("quit00", "")));
@@ -154,8 +155,9 @@ public class WSDDAutoDeployer implements JarLoader{
     if(action.equals("list")){
         //return listConfig(engine);
     }
-    if(action.equals("clientdeploy"))
-        engine = engine.getClientEngine();
+    if(action.equals("clientdeploy")) {
+			engine = engine.getClientEngine();
+		}
     WSDDDocument wsddDoc = new WSDDDocument(root);
     org.apache.axis.EngineConfiguration config = engine.getConfig();
     if(config instanceof WSDDEngineConfiguration)
@@ -176,19 +178,19 @@ public class WSDDAutoDeployer implements JarLoader{
 	 * @return Returns the engine.
 	 */
 	public AxisEngine getEngine() {
-		if(engine==null){
+		if(this.engine==null){
 			Map environment = System.getProperties();
 			AxisServer axisServer;
 			try {
 				axisServer = AxisServer.getServer(environment);
-				engine = axisServer;
+				this.engine = axisServer;
 			}
 			catch (AxisFault e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-		return engine;
+		return this.engine;
 	}
 
 	
