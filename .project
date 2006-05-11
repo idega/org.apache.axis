@@ -5,6 +5,7 @@
   <comment>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</comment>
   <projects>
     <project>com.idega.core</project>
+    <project>com.idega.block.web2.0</project>
   </projects>
   <buildSpec>
     <buildCommand>
