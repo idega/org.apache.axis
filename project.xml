@@ -2,7 +2,7 @@
 
 <project>
   <pomVersion>3</pomVersion>
-  <extend>${base.project.dir}/base-project.xml</extend>
+  <extend>${base.project.dir}/base-dependencies.xml</extend>
   <name>Axis</name>
   <groupId>bundles</groupId>
   <artifactId>org.apache.axis</artifactId>
