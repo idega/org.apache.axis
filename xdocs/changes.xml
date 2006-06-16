@@ -1,0 +1,20 @@
+<document>
+  <properties>
+    <title>Apache Axis changes</title>
+    <author email="tryggvi@idega.com">Tryggvi Larusson</author>
+  </properties>
+  <body>
+      <release version="1.3" date="2005-06-16">
+      <action dev="tryggvil" type="update">
+      	Declaration of version for including in ePlatform release 3.1
+      </action>
+      <action dev="tryggvil" type="update">
+      	Extended Axis servlet implementation that now implements
+      	"auto deployment" of Axis deployment descriptors (*deply.wsdd files) that
+      	are embedded inside jar files of modules. This means that webservices
+      	don't have to manually be deployed on web application updates.
+      </action>            
+    </release>
+
+  </body>
+</document>

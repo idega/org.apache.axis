@@ -2,12 +2,11 @@
 
 <project>
   <pomVersion>3</pomVersion>
-  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <extend>${base.project.dir}/base-project.xml</extend>
   <name>Axis</name>
   <groupId>bundles</groupId>
   <artifactId>org.apache.axis</artifactId>
-  <currentVersion>1.2.2</currentVersion>
-  <!--currentVersion>1.2.3-SNAPSHOT</currentVersion-->
+  <currentVersion>1.3</currentVersion>
   <organization/>
   <inceptionYear>2005</inceptionYear>
   <shortDescription>Apache Axis framework</shortDescription>
@@ -34,9 +33,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.core</artifactId>
-      <!--version>3.0.6</version-->
-      <version>SNAPSHOT</version>
-
+      <version>3.1.0</version>
       <type>jar</type>
       <url>http://www.idega.com/</url>
        <properties>
