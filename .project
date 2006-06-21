@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <projectDescription>
-  <name>org.apache.axis</name>
-  <comment>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</comment>
-  <projects>
-    <project>com.idega.core</project>
-    <project>com.idega.block.web2.0</project>
-  </projects>
-  <buildSpec>
-    <buildCommand>
-      <name>org.eclipse.jdt.core.javabuilder</name>
-      <arguments>
-      </arguments>
-    </buildCommand>
-  </buildSpec>
-  <natures>
-    <nature>org.eclipse.jdt.core.javanature</nature>
-  </natures>
+	<name>org.apache.axis</name>
+	<comment>Apache Axis is an implementation of the SOAP (&quot;Simple Object Access Protocol&quot;) submission to W3C.</comment>
+	<projects>
+		<project>com.idega.core</project>
+		<project>com.idega.block.web2.0</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.maven.ide.eclipse.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.maven.ide.eclipse.maven2Nature</nature>
+	</natures>
 </projectDescription>
