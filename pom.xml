@@ -11,7 +11,7 @@
   <groupId>com.idega.block.platform</groupId>
   <name>Apache Axis</name>
   <artifactId>org.apache.axis</artifactId>
-  <version>1.3</version>
+  <version>${com.idega.block.platform-org.apache.axis-version}</version>
   <inceptionYear>2005</inceptionYear>
   <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
   <scm>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis</artifactId>
-      <version>1.3</version>
+      <version>${axis-axis-version}</version>
       <type>jar</type>
     </dependency>
     <dependency>
@@ -67,7 +67,7 @@
     <dependency>
       <groupId>axis</groupId>
       <artifactId>axis-jaxrpc</artifactId>
-      <version>1.3</version>
+      <version>${axis-axis-jaxrpc-version}</version>
       <type>jar</type>
     </dependency>
     <dependency>
