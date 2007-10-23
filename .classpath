@@ -3,7 +3,7 @@
 <classpath>
 	<classpathentry excluding="" kind="src" path="src/java" />
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" />
-	<classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.core-3.1.65.jar" />
+	<classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.core-3.1.67.jar" />
 	<classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-1.3.jar" />
 	<classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-schema-1.3.jar" />
 	<classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-ant-1.3.jar" />
