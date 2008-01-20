@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
   	<groupId>com.idega.block.platform</groupId>
@@ -11,7 +11,7 @@
   <groupId>com.idega.block.platform</groupId>
   <name>Apache Axis</name>
   <artifactId>org.apache.axis</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>4.0.0</version>
   <inceptionYear>2005</inceptionYear>
   <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
   <scm>
@@ -21,6 +21,7 @@
      -->
     <connection>scm:cvs:ext:${user.name}@code.idega.com:/idega/cvs:${groupId}/${artifactId}/</connection>
     <developerConnection>scm:cvs:ext:${user.name}@code.idega.com:/idega/cvs:${groupId}/${artifactId}/</developerConnection>
+    <tag>org_apache_axis-4_0_0</tag>
   </scm>
 
   <developers>
@@ -29,14 +30,14 @@
       <id>eiki</id>
       <email>eiki@idega.is</email>
       <organization>idega software</organization>
-      <roles/>
+      <roles />
     </developer>
     <developer>
       <name>Tryggvi Larusson</name>
       <id>tryggvil</id>
       <email>tryggvi@idega.is</email>
       <organization>idega software</organization>
-      <roles/>
+      <roles />
     </developer>
   </developers>
   <dependencies>
