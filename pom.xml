@@ -5,12 +5,12 @@
   <parent>
   	<groupId>com.idega.block.platform</groupId>
   	<artifactId>com.idega.block.platform</artifactId>
-  	<version>4.0.1-SNAPSHOT</version>
+  	<version>4.0.0-SNAPSHOT</version>
   </parent>
   <packaging>jar</packaging>
   <groupId>com.idega.block.platform</groupId>
   <artifactId>org.apache.axis</artifactId>
-  <version>4.0.1-SNAPSHOT</version>
+  <version>4.0.0-SNAPSHOT</version>
   <name>Apache Axis</name>
   <inceptionYear>2005</inceptionYear>
   <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
