@@ -1,44 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <classpath>
-  <classpathentry excluding="" kind="src" path="src/java">
-  </classpathentry>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
-  </classpathentry>
-  <classpathentry kind="src" path="/com.idega.core">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-schema-1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-ant-1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/commons-discovery/jars/commons-discovery-0.2.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-jaxrpc-1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-wsdl4j-1.5.1.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-saaj-1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/log4j/jars/log4j-1.2.8.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/commons-logging/jars/commons-logging-1.0.4.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/servletapi/jars/servletapi-2.4.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-jsf-api-1.1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-tomahawk-1.1.3.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/ejb/jars/ejb-2.0.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/jta/jars/jta-spec1_0_1.jar">
-  </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.block.web2.0-3.1.7.jar">
-  </classpathentry>
-  <classpathentry kind="output" path="target/classes">
-  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"></classpathentry>
+  <classpathentry excluding="" kind="src" path="src/java"></classpathentry>
+  <classpathentry kind="src" path="/com.idega.core"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-schema-1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-ant-1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-discovery/jars/commons-discovery-0.2.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-jaxrpc-1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-wsdl4j-1.5.1.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/axis/jars/axis-saaj-1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/log4j/jars/log4j-1.2.8.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-logging/jars/commons-logging-1.0.4.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/servletapi/jars/servletapi-2.4.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-jsf-api-1.1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-tomahawk-1.1.3.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/ejb/jars/ejb-2.0.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jta/jars/jta-spec1_0_1.jar"></classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.block.web2.0-3.1.7.jar"></classpathentry>
+  <classpathentry kind="output" path="target/classes"></classpathentry>
 </classpath>
