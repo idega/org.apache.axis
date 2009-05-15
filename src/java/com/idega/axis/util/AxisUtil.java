@@ -1,5 +1,5 @@
 /*
- * $Id: AxisUtil.java,v 1.3 2005/11/29 15:29:01 laddi Exp $ Created on Aug 9, 2005
+ * $Id: AxisUtil.java,v 1.4 2009/05/15 07:29:34 valdas Exp $ Created on Aug 9, 2005
  * 
  * Copyright (C) 2005 Idega Software hf. All Rights Reserved.
  * 
@@ -27,10 +27,10 @@ import com.idega.idegaweb.IWUserContextImpl;
 /**
  * A helper class for axis webservices in IdegaWeb applications.
  * 
- * Last modified: $Date: 2005/11/29 15:29:01 $ by $Author: laddi $
+ * Last modified: $Date: 2009/05/15 07:29:34 $ by $Author: valdas $
  * 
  * @author <a href="mailto:eiki@idega.com">eiki</a>
- * @version $Revision: 1.3 $
+ * @version $Revision: 1.4 $
  */
 public class AxisUtil {
 
@@ -91,11 +91,11 @@ public class AxisUtil {
 		return null;
 	}
 	
-	public static IBOService getServiceBean(Class serviceBeanInterface) throws IBOLookupException{
+	public static <T> T getServiceBean(Class<? extends IBOService> serviceBeanInterface) throws IBOLookupException{
 		return IBOLookup.getServiceInstance(getIWApplicationContext(),serviceBeanInterface);
 	}
 	
-	public static IBOSession getSessionBean(Class sessionBeanInterface) throws IBOLookupException{
+	public static <T> T getSessionBean(Class<? extends IBOSession> sessionBeanInterface) throws IBOLookupException{
 		return IBOLookup.getSessionInstance(getIWUserContext(),sessionBeanInterface);
 	}
 	
