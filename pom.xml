@@ -14,17 +14,6 @@
   <name>Apache Axis</name>
   <inceptionYear>2005</inceptionYear>
   <description>Apache Axis is an implementation of the SOAP ("Simple Object Access Protocol") submission to W3C.</description>
-  <scm>
-    
-    <connection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.axis/</connection>
-    <developerConnection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.axis/</developerConnection> 
-     
-     <!--
-    <connection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.axis/</connection>
-    <developerConnection>scm:cvs:ext:idegaweb@code.idega.com:/idega/cvs:com.idega.block.platform/org.apache.axis/</developerConnection>
-    -->
-    <tag>com_idega_block_platform-4_1_2</tag>
-  </scm>
 
   <developers>
     <developer>
