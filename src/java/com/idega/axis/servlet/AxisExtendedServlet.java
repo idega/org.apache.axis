@@ -24,6 +24,7 @@ import org.apache.axis.transport.http.AxisServlet;
 import com.idega.axis.deployment.WSDDAutoDeployer;
 import com.idega.idegaweb.IWMainApplication;
 import com.idega.idegaweb.IWModuleLoader;
+import com.idega.util.CoreConstants;
 import com.idega.util.StringUtil;
 
 
@@ -39,18 +40,10 @@ import com.idega.util.StringUtil;
  */
 public class AxisExtendedServlet extends AxisServlet {
 
-	/**
-	 * Comment for <code>serialVersionUID</code>
-	 */
 	private static final long serialVersionUID = -5586830560973425845L;
 
-
-	/**
-	 *
-	 */
 	public AxisExtendedServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/* (non-Javadoc)
@@ -58,7 +51,6 @@ public class AxisExtendedServlet extends AxisServlet {
 	 */
 	@Override
 	public void doGet(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		super.doGet(arg0, arg1);
 	}
 
@@ -67,7 +59,6 @@ public class AxisExtendedServlet extends AxisServlet {
 	 */
 	@Override
 	public void doPost(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		super.doPost(arg0, arg1);
 	}
 
@@ -76,17 +67,16 @@ public class AxisExtendedServlet extends AxisServlet {
 	 */
 	@Override
 	public void init() throws ServletException {
-		// TODO Auto-generated method stub
 		super.init();
+
 		autoDeployServices();
 	}
 
 
 	public void autoDeployServices(){
-
 		IWMainApplication iwma = IWMainApplication.getIWMainApplication(getServletContext());
 
-		IWModuleLoader loader = new IWModuleLoader(iwma,getServletContext());
+		IWModuleLoader loader = new IWModuleLoader(iwma, getServletContext());
 
 		WSDDAutoDeployer deployer = new WSDDAutoDeployer();
 		try {
@@ -100,9 +90,15 @@ public class AxisExtendedServlet extends AxisServlet {
 
  		String serviceURL = IWMainApplication.getDefaultIWMainApplication().getSettings().getProperty(IWMainApplication.PROPERTY_DEFAULT_SERVICE_URL);
 
-		if (!StringUtil.isEmpty(serviceURL)){
+		if (!StringUtil.isEmpty(serviceURL)) {
+			if (!serviceURL.endsWith(CoreConstants.SLASH)) {
+				serviceURL = serviceURL.concat(CoreConstants.SLASH);
+			}
+			if (!serviceURL.endsWith("services/")) {
+				serviceURL = serviceURL.concat("services/");
+			}
 
-			Iterator i=null;
+			Iterator<?> i= null;
 	        try {
 	            i = getEngine().getConfig().getDeployedServices();
 	        } catch (ConfigurationException configException) {
@@ -120,6 +116,4 @@ public class AxisExtendedServlet extends AxisServlet {
 		}
 
 	}
-
-
 }
