@@ -24,7 +24,9 @@ import org.apache.axis.transport.http.AxisServlet;
 import com.idega.axis.deployment.WSDDAutoDeployer;
 import com.idega.idegaweb.IWMainApplication;
 import com.idega.idegaweb.IWModuleLoader;
+import com.idega.presentation.IWContext;
 import com.idega.util.CoreConstants;
+import com.idega.util.CoreUtil;
 import com.idega.util.StringUtil;
 
 
@@ -88,7 +90,9 @@ public class AxisExtendedServlet extends AxisServlet {
 		loader.getJarLoaders().add(deployer);
 		loader.loadBundlesFromJars();
 
- 		String serviceURL = IWMainApplication.getDefaultIWMainApplication().getSettings().getProperty(IWMainApplication.PROPERTY_DEFAULT_SERVICE_URL);
+		IWContext iwc = CoreUtil.getIWContext();
+ 		String serviceURL = iwc == null ? null : iwc.getServerURL();
+ 		serviceURL = serviceURL == null ? IWMainApplication.getDefaultIWMainApplication().getSettings().getProperty(IWMainApplication.PROPERTY_DEFAULT_SERVICE_URL) : serviceURL;
 
 		if (!StringUtil.isEmpty(serviceURL)) {
 			if (!serviceURL.endsWith(CoreConstants.SLASH)) {
