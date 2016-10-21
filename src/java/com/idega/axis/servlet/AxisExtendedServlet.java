@@ -91,7 +91,7 @@ public class AxisExtendedServlet extends AxisServlet {
 		loader.loadBundlesFromJars();
 
 		IWContext iwc = CoreUtil.getIWContext();
- 		String serviceURL = iwc == null ? null : iwc.getServerURL();
+ 		String serviceURL = iwc == null ? null : CoreUtil.getServerURL(iwc.getRequest());
  		serviceURL = serviceURL == null ? IWMainApplication.getDefaultIWMainApplication().getSettings().getProperty(IWMainApplication.PROPERTY_DEFAULT_SERVICE_URL) : serviceURL;
 
 		if (!StringUtil.isEmpty(serviceURL)) {
