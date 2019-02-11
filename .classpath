@@ -19,6 +19,5 @@
   <classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0.jar"></classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/ejb/jars/ejb-2.0.jar"></classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/jta/jars/jta-spec1_0_1.jar"></classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/bundles/jars/com.idega.block.web2.0-3.1.7.jar"></classpathentry>
   <classpathentry kind="output" path="target/classes"></classpathentry>
 </classpath>
